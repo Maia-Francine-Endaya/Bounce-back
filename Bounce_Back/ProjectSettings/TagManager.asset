@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Out_of_Bounds
   layers:
   - Default
   - TransparentFX
