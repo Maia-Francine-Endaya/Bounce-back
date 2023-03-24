@@ -66,15 +66,13 @@ public class BallController : MonoBehaviour
         if (collision.gameObject.tag == "Obstacles")
         {
             Debug.Log("You've hit a bouncy thing!");
-            // rb.AddForce(-Vector3.forward * 10f, ForceMode.Impulse);
-            rb.AddForce(collision.contacts[0].normal * 10f, ForceMode.Impulse);
+            rb.AddForce(collision.contacts[0].normal * 15f, ForceMode.Impulse);
         }
 
         if (collision.gameObject.tag == "Wall")
         {
             Debug.Log("You've hit a wall!");
-            // rb.AddForce(-Vector3.forward * 5f, ForceMode.Impulse);
-            rb.AddForce(collision.contacts[0].normal * 5f, ForceMode.Impulse);
+            rb.AddForce(collision.contacts[0].normal * 15f, ForceMode.Impulse);
         }
     }
 
