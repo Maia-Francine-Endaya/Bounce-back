@@ -72,7 +72,7 @@ public class BallController : MonoBehaviour
         if (collision.gameObject.tag == "Wall")
         {
             Debug.Log("You've hit a wall!");
-            rb.AddForce(collision.contacts[0].normal * 15f, ForceMode.Impulse);
+            rb.AddForce(collision.contacts[0].normal * 10f, ForceMode.Impulse);
         }
     }
 
