@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Out_of_Bounds
+  - Obstacles
+  - Wall
   layers:
   - Default
   - TransparentFX
